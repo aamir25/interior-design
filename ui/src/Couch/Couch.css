@@ -1,0 +1,39 @@
+.couch-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.upper-part {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    width: 100%;
+    height: 130px;
+    border-radius: 30px 30px 0px 0px;
+    z-index: 1;
+}
+
+.down-part {
+    background-color: blue;
+    width: 100%;
+    height: 120px;    
+    filter: brightness(0.8);
+}
+
+.left-arm-rest, .right-arm-rest {
+    background-color: blue;
+    width: 60px;
+    height: 160px;
+    border-radius: 10px;
+    border: solid 1px gray;
+    margin-top: 100px;
+}
+
+.left-arm-rest {
+    margin-left: -15px;
+}
+
+.right-arm-rest {
+    margin-right: -15px;
+}

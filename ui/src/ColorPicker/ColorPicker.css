@@ -1,0 +1,8 @@
+.color-picker-wrapper {
+    display: none;
+    z-index: 10;
+}
+
+.display-block {
+    display: block;
+}
