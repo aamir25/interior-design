@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import Floor from './Floor/Floor';
-import Wall from './Wall/Wall';
+import Home from './Home/Home';
+import Login from './Login/Login';
+import Register from './Register/Register';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="main-wrapper">
-        <Wall />
-        <Floor />
-      </div>
+      <BrowserRouter>
+        <Route path="/home" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+      </BrowserRouter>
     );
   }
 }

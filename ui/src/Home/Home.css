@@ -1,0 +1,37 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.submit-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.submit-button button {
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #002663;
+  color: #ffffff;
+  border: none;
+  user-select: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.submit-button button:hover {
+  transform: scale(1.05);
+}
+
+.submit-button button:active {
+  transform: scale(0.9);
+}
+
+.submit-button button:focus {
+  outline: 0;
+}

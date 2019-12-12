@@ -9,8 +9,7 @@ class Curtain extends Component {
         super(props);
     
         this.state = {
-          displayColorPicker: false,
-          backgroundColor: '#008000'
+          displayColorPicker: false
         };
     
         this.toggleColorPicker = this.toggleColorPicker.bind(this);
@@ -24,16 +23,14 @@ class Curtain extends Component {
     }
 
     setBackGroundColor(color) {
-        this.setState({
-            backgroundColor: color.hex
-        });
+        this.props.setColor('curtainColor', color.hex);
     }
 
     render() {
         let curtainStyle;
 
         curtainStyle = {
-            backgroundColor: this.state.backgroundColor
+            backgroundColor: this.props.curtainColor
         };
 
         return (
@@ -51,7 +48,7 @@ class Curtain extends Component {
 
                 <div className="color-picker-container">
                     <ColorPicker 
-                        color={this.state.backgroundColor}
+                        color={this.props.curtainColor}
                         setBackGroundColor={(color) => this.setBackGroundColor(color)}
                         shouldDisplay={this.state.displayColorPicker}
                     />

@@ -7,7 +7,10 @@ const app = express();
 const usersRoutes = require('./routes/users');
 const settingsRoutes = require('./routes/settings');
 
-mongoose.connect('mongodb://localhost/interior-design');
+mongoose.connect('mongodb://localhost/interior-design', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
