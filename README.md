@@ -10,7 +10,7 @@ npm run start
 
 ## Run mongoDB
 I have used a local mongodb database.
-I would prefer you to run a local mongodb server.
+I would suggest you to run a local mongodb server.
 
 ## Run Services
 cd services
